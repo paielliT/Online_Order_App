@@ -1,0 +1,460 @@
+html, body {
+	box-sizing: border-box;
+	height: 100%;
+}
+.login-signup {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.home{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .875rem;
+	min-width: 300px;
+}
+.container {
+	background-color: #f2f2f2;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ccc;
+	width: 500px;
+	text-align: center;
+}
+.header {
+	background-image: initial;
+	background-color: rgb(135, 100, 0);
+	background: #FFC627;
+	border-radius: 5px;
+}
+.header h1 {
+	margin: 0;
+}
+.header h1 a {
+	background-image: url(https://weblogin.asu.edu/cas/images/asu_university_horiz_rgb_maroongold_150_275px.png);
+	height: 60px;
+	width: 275px;    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.sr-only {
+	border-color: initial;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+h2 {
+	font-weight: normal;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.form-group {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 16px;
+}
+.form-group .control-label {
+	font-size: 15px;
+	font-weight: bold;
+	width: 125px;
+	margin: 6px 0;
+	display: inline-block;
+	text-align: right;
+}
+.form-group .input-container {
+	margin: 0 8px;
+}
+label {
+	text-align: left;
+	margin-bottom: 10px;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+}
+button[type="submit"] {
+	background-color: rgb(112, 23, 51);
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+button[class="altbtn"] {
+	background-color: #FFC627;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+button:hover {
+	opacity: .8;
+}
+.navbar-component {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	width: 100%;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1224px;
+}
+.navbar-logo {
+	display: inline-flex;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+	padding: 0px;
+}
+.navbar-logo .vert {
+	display: block;
+	height: 72px;
+	width: auto;
+	margin: 1.5rem 1rem 1.5rem 0px;
+}
+.navbar-container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.title-name {
+	font-size: 2rem;
+	margin: 1.5rem 0px 1rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: currentColor;
+}
+.topnav {
+	background-color: #ccc;
+	overflow: hidden;
+	width: 100%;
+	border-radius: 5px;
+}
+.topnav a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 5px;
+}
+.topnav a:hover {
+	background-color: #FFC627;
+	color: black;
+}
+.topnav a.active {
+	background-color: rgb(112, 23, 51);
+	color: white;
+}
+.topnav-right {
+	float: right;
+}
+.content-wrapper {
+	width: 1050px;
+	margin: 0 auto;
+}
+main .popular {
+	display: flex;
+	flex-direction: column;
+	background-image: url(img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1228px;
+	border-radius: 5px;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+main .popular h2 {
+	display: inline-block;
+	width: 1050px;
+	font-size: 68px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+}
+main .popular p {
+	display: inline-block;
+	margin: 0;
+	width: 1050px;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+main .popular-items h2 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .popular-items .products, main .products .products-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0 0 0;
+}
+main .popular-items .products .product, main .products .products-wrapper .product {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	width: 25%;
+	padding-bottom: 60px;
+}
+main .popular-items .products .product img, main .products .products-wrapper .product img {
+	transform: scale(1);
+	transition: transform 1s;
+}
+main .popular-items .products .product .name, main .products .products-wrapper .product .name {
+	display: block;
+	color: #555555;
+	padding: 20px 0 2px 0;
+}
+main .popular-items .products .product .price, main .products .products-wrapper .product .price {
+	display: block;
+	color: #999999;
+}
+main .popular-items .products .product:hover img, main .products .products-wrapper .product:hover img {
+	transform: scale(1.05);
+	transition: transform 1s;
+}
+main .popular-items .products .product:hover .name, main .products .products-wrapper .product:hover .name {
+	text-decoration: underline;
+}
+main > .product {
+	flex: 1 0 auto;
+	display: flex;
+	padding: 40px 0;
+}
+main > .product > div {
+	padding-left: 15px;
+}
+main > .product h1 {
+	font-size: 34px;
+	font-weight: normal;
+	margin: 0;
+	padding: 20px 0 10px 0;
+}
+main > .product .price {
+	display: block;
+	font-size: 22px;
+	color: #999999;
+}
+main > .product form {
+	display: flex;
+	flex-flow: column;
+	margin: 40px 0;
+}
+main > .product form input[type="number"] {
+	width: 379.5px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+main > .product form input[type="submit"] {
+	background: rgb(112, 23, 51);
+	border: 0;
+	color: #FFFFFF;
+	width: 400px;
+	padding: 12px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+main > .product form input[type="submit"]:hover {
+	background: #FFC627;
+}
+main > .products h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .cart h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .cart table {
+	width: 100%;
+}
+main .cart table thead td {
+	padding: 30px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .cart table thead td:last-child {
+	text-align: right;
+}
+main .cart table tbody td {
+	padding: 20px 0;
+	border-bottom: 1px solid #EEEEEE;
+}
+main .cart table tbody td:last-child {
+	text-align: right;
+}
+main .cart table .img {
+	width: 80px;
+}
+main .cart table .remove {
+	color: #777777;
+	font-size: 12px;
+	padding-top: 3px;
+}
+main .cart table .remove:hover {
+	text-decoration: underline;
+}
+main .cart table .price {
+	color: #999999;
+}
+main .cart table a {
+	text-decoration: none;
+	color: #555555;
+}
+main .cart table input[type="number"] {
+	width: 68px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #555555;
+	border-radius: 5px;
+}
+main .cart .subtotal {
+	text-align: right;
+	padding: 40px 0;
+}
+main .cart .subtotal .text {
+	padding-right: 40px;
+	font-size: 18px;
+}
+main .cart .subtotal .price {
+	font-size: 18px;
+	color: #999999;
+}
+main .cart .buttons {
+	text-align: right;
+	padding-bottom: 40px;
+}
+main .cart .buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 0;
+	background: rgb(112, 23, 51);
+	color: #FFFFFF;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+main .cart .buttons input[type="submit"]:hover {
+	background: #FFC627;
+}
+main .placeorder h1 {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+	padding: 40px 0;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+main .placeorder p {
+	text-align: center;
+}
+.footer {
+	flex-shrink: 0;
+	flex-grow: 0;
+	bottom: 0;
+	padding: 20px 0;
+	width: 100%;
+}
+.profile {
+	height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.profile h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+}
+
+.profile > p table td, .profile > div table td {
+	padding: 5px;
+}
+.profile > p table td:first-child, .profile > div table td:first-child {
+	font-weight: bold;
+	color: rgb(112, 23, 51);
+	padding-right: 15px;
+}
+.profile > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+.footer-abs {
+	position: absolute;
+	flex-shrink: 0;
+	flex-grow: 0;
+	bottom: 0;
+	padding: 20px 0;
+	width: 100%;
+}
+article {
+	width: fit-content;
+	margin: auto;
+}
+#ss{
+	font-size: 50px;
+}
+#slogan{
+	font-size: 35px;
+	color:  maroon;
+}
+article h3{
+	font-size: 25px;
+}
+article p{
+	font-size: 20px;
+}
+.mu {
+	width: 1136px;
+	border-radius: 5px;
+	margin: auto;
+}
